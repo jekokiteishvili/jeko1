@@ -1,0 +1,86 @@
+body{
+    background-color: rgb(28, 207, 73);
+}
+
+@mixin name {
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;    
+}
+
+button{
+    @include name;
+    display: block;
+}
+
+
+$lgsize:21px;
+$mdsize:15px;
+$smsize:10px;
+
+h1{
+    font-size: $lgsize;
+}
+
+p{
+    font-size: $mdsize;
+}
+
+@mixin centerabsolute($left:50%, $color, $width:false) {
+    position: absolute;
+    top: 50% ;
+    @if $width{
+         width: $width;
+    }
+   
+    background-color: $color;
+    left: $left ;
+    transform:translate(-50%, -50%)
+}
+
+.sas{
+    position: relative;
+    width: 300px;
+    box-shadow: 8px 8px 15px black;
+    margin: auto;
+    transition: all .6s;
+
+    .disc{
+        @include centerabsolute(25%, red);
+        padding: 15px;
+        color: white;
+        transition: all .6s;
+
+        &:hover{
+            @include centerabsolute(50%, green);
+        }
+    }
+
+    &:hover{
+        width: 400px;
+    }
+    
+img{
+    width: 100%;
+    border: 3px solid rgb(88, 13, 228);
+}
+
+.conts{
+    padding: {
+      top: 25px;
+      left: 15px;
+      right: 35px;
+    } 
+    
+background: {
+    size:cover;
+    position: center;
+    repeat:no-repeat;
+    image:url(https://images5.alphacoders.com/414/thumb-1920-414718.jpg)
+
+};  
+}
+
+}
+

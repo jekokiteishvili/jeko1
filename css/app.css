@@ -1,0 +1,62 @@
+body {
+  background-color: #1ccf49;
+}
+
+button {
+  background-color: #ff0000;
+  border-radius: 10px;
+  padding: 10px;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  font-size: 21px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.sas {
+  position: relative;
+  width: 300px;
+  box-shadow: 8px 8px 15px black;
+  margin: auto;
+  transition: all 0.6s;
+}
+.sas .disc {
+  position: absolute;
+  top: 50%;
+  background-color: red;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  color: white;
+  transition: all 0.6s;
+}
+.sas .disc:hover {
+  position: absolute;
+  top: 50%;
+  background-color: green;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.sas:hover {
+  width: 400px;
+}
+.sas img {
+  width: 100%;
+  border: 3px solid #580de4;
+}
+.sas .conts {
+  padding-top: 25px;
+  padding-left: 15px;
+  padding-right: 35px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url(https://images5.alphacoders.com/414/thumb-1920-414718.jpg);
+}
+
+/*# sourceMappingURL=app.css.map */
