@@ -80,8 +80,8 @@
   }
   .row {
     display: flex;
-    width: 1300px;
-    margin-left: auto;
+    width: 1000px;
+    margin: auto;
     max-width: 100%;
   }
 
@@ -232,10 +232,20 @@ color: rgb(49, 47, 47);
   }
 
   @media (max-width:900px) {
+    .head{
+      background-image: none;
+    }
+    .box{
+      margin: auto;
+    }
     nav ul{
          display: none;
      }
-     
+     .sectionbottom .sectionbody .flex .width33 {
+      width: 100%;
+      padding: 0 15px;
+      margin-top: 20px;
+     }
      .content ul{
          display: block;
          text-align: center;

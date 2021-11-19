@@ -1,9 +1,22 @@
-
-.mynavbar{
-    padding: 20px 0;
+.navbar{
+    background-color: rgb(56, 1, 82);  
 }
 
-.carousel-item img{
-    height: 500px;
-    object-fit: cover;
+
+.bord{
+    border: 0;
+    border-bottom: 1px solid white;
+}
+
+.but{
+    background-color: white;
+    border: 2px solid rgb(185, 6, 6);
+    color: rgb(185, 6, 6);
+}
+.but1{
+    background-color: rgb(185, 6, 6);
+}
+.col{
+    background-color: rgb(56, 1, 82);
+   
 }

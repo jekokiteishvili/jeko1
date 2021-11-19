@@ -1,0 +1,13 @@
+header{
+  background-image: url(https://www.penguinsworld.cz/img/mid/98/antarktida-12.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.carousel-item img{
+    height: 400px;
+    object-fit: cover;
+}
+
+
