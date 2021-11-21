@@ -2,20 +2,6 @@
     background-color: rgb(56, 1, 82);  
 }
 
-
-.bord{
-    border: 0;
-    border-bottom: 1px solid white;
-}
-
-.but{
-    background-color: white;
-    border: 2px solid rgb(185, 6, 6);
-    color: rgb(185, 6, 6);
-}
-.but1{
-    background-color: rgb(185, 6, 6);
-}
 .col{
     background-color: rgb(56, 1, 82);
    
