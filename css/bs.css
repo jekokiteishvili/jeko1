@@ -1,107 +1,177 @@
-@media (min-width: 1100px){
-    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
-     max-width: 1100px;
- } 
- }
-
- @font-face {
-     font-family: nino;
-     src: url(../fontebi/bpg_nino_mtavruli_bold.ttf);
- }
-
- @font-face {
-     font-family: arial;
-     src: url(../fontebi/bpg_arial_2009.ttf);
- }
-
- header{
-     background-image: url(../img/Layer\ 3.png);
-     background-position: center;
-     background-size: cover;
-     background-repeat: no-repeat;
-     
-   }
-   
- 
- header section{
-    background-color: #333532;
-    height: 100%;
-    
- }
-section span{
-    color: #ffffff;
-    font-size: 15px;
+@font-face {
+  font-family: nino;
+  src: url(../fontebi/bpg_nino_mtavruli_bold.ttf);
+}
+@font-face {
+  font-family: arial;
+  src: url(../fontebi/bpg_arial_2009.ttf);
+}
+.carousel-item {
+  min-height: 730px;
+  height: 100%;
+  background-size: cover;
+}
+.carousel-item .text {
+  margin-top: 200px;
+}
+.carousel-item .text h1 {
+  font-family: nino;
+  font-size: 24px;
+}
+.carousel-item .text p {
+  margin-top: 30px;
+  font-family: arial;
+  font-size: 17px;
+}
+.carousel-item .text a {
+  margin-top: 47px;
 }
 
+.carousel-control-prev-icon {
+  height: 5rem !important;
+  width: 5rem !important;
+}
 
-.navbar{
-    background-color: #ffffff;
+.carousel-control-next-icon {
+  height: 5rem !important;
+  width: 5rem !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+.head-nav {
+  position: relative;
+  background-color: #343532bf;
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+}
+.head-nav::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #6a6a6a;
+  opacity: 0.5;
+}
+.head-nav a {
+  font-size: 15px;
+  font-family: nino;
+  color: #ffff;
+  display: inline-block;
+  padding: 10px 8px 5px;
+}
+.head-nav span {
+  color: white;
+}
+
+.navbar {
+  z-index: 2;
+  top: 37px;
+  position: relative;
+}
+.navbar::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  width: 100%;
+  height: 1px;
+  background-color: #ffff;
+  opacity: 1;
+}
+
+.nav-item {
+  font-size: 17px;
+  font-family: nino;
+  padding-top: 9px;
+  padding-left: 10px;
+}
+.nav-item img {
+  padding-right: 8px;
+}
+
+#dog {
+  position: relative;
+  bottom: 8px;
+  left: 11px;
+}
+#dog + span {
+  position: relative;
+  left: 2px;
+  bottom: 2px;
+}
+
+.dropdown-menu {
+  padding: 0;
+  min-width: 17rem;
+  left: 20px !important;
+  top: 110% !important;
+  border: 1px solid #a3aca3 !important;
+  border-radius: 2px !important;
+  position: relative;
+}
+.dropdown-menu::before {
+  position: absolute;
+  content: "";
+  width: 45%;
+  height: 3px;
+  left: 0;
+  top: -6px;
+  background-color: #df2335;
+}
+.dropdown-menu li:last-child a {
+  border-bottom: 0;
+}
+.dropdown-menu a {
+  font-size: 14px;
+  font-family: arial;
+  color: #4b4b4b;
+  border-bottom: 1px solid #a3aca3;
+  padding: 12px 16px 14px 16px;
+}
+
+section {
+  background-color: #f0f2eb;
+  height: 100%;
+  width: 100%;
+}
+section .card {
+  width: 200px;
+  height: 100px;
+  background-color: white;
+  border: 1px solid #d5d5d5;
+  border-radius: 0;
+  margin-top: 30px;
+  margin-right: -10px;
+}
+section .card img {
+  padding: 10px;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    top: 80px;
+  }
+
+  .head-nav {
     height: 100px;
+  }
+  .head-nav .head {
+    width: 140px;
+  }
+  .head-nav .head span {
+    display: none;
+  }
 }
-.link{
-    margin-left: 30px;
-   
-}
-.pad{
- padding-top: 15px;
-}
-
-li a{
-    font-size: 15px;
-    font-family: nino;    
-    color: #ffffff;
-}
-header .text{
-   color: #ffffff; 
-}
-.text h1{
-    margin-top: 190px;
-    font-family: nino;
-    font-size: 24px;
-   
-}
-.text p{
-    margin-top: 35px;
-    font-family: arial;
-    font-size: 17px;
-    width: 700px;
-}
-.text a{
-    margin-top: 50px;
-    margin-bottom: 170px;
-}
-nav li a{
-    font-size: 17px;
-    font-family: nino;
-}
-.size{
-    font-size: 14px;
-    font-family: arial;
+@media (min-width: 1100px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1100px;
+  }
 }
 
-.card{
-    width: 200px;
-    height: 100px;
-    background-color: white;
-    border: 1px solid #d5d5d5;
-    border-radius: 0;
-    margin-top: 30px;
-    margin-right: -10px;
-    
-}
-.card img{
-    padding: 10px;  
-}
-section{
-    background-color: #f0f2eb;
-    height: 100%;
-    width: 100%;
-}
-
-.body{
-    color: #828282;
-    font-size: 15px;
-    font-family: nino;
-    margin-top: 35px;
-   
-}
+/*# sourceMappingURL=bs.css.map */
