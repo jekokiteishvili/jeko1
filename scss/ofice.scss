@@ -1,4 +1,7 @@
-
+@font-face {
+    font-family: mont;
+    src: url(../fontebi/Montserrat-Bold.ttf);
+}
 
 .carousel-item{
     height: 900px;
@@ -65,40 +68,46 @@ h5{
     
 }
 
-.icon{
-   position: relative;
-   right: 870px;
+.carousel-control-prev{
+    top: 50%;
+    left: 50%;
+    transform: translate(-260%, -50%);
 }
-.arrow{
+.carousel-control-next{
+    top: 50%;
+    left: 50;
+    transform: translate(-465%, -50%);
+}
+
+
+.head{
     color: #fde428 !important;
-    font-weight: bold !important;
+    font-size: 12px;
+    
 }
 .navbar-brand{
-    font-size: 15px !important;
-    font-weight: bold;
+    font-size: 12px !important;
+    padding-top: 50px;
+    font-family: mont;
 }
 .navbar{
-    position: relative;
-    top: 100px;
-    z-index: 1;
-    
-    
- 
     .nav-item{
         padding-left: 10px;
+        padding-top: 10px;
     }
 
     span{
         color: #fde428;
         font-size: 45px;
-        font-weight: bold;
         line-height: 0;
+        font-family: mont;
     }
 
    
     a{
         color: white !important;
         font-size: 14px;
+        font-family: mont;
     }
    
     .drop{
@@ -115,9 +124,6 @@ h5{
 }
 
 section{
- 
-    
-       
         h2{
         font-size: 31px;
         font-weight: bold;
@@ -143,7 +149,7 @@ section{
     }
    .image{
          position: relative;
-         left: 25px;
+         
         h1{
        content: "";
        width: 270px;
@@ -157,6 +163,8 @@ section{
        top: 50%;
        left: 50%;
        transform: translate(-50%, -50%);
+       max-width: 100%;
+     
    }
    }
   
@@ -200,6 +208,7 @@ section{
     padding-bottom: 100px;
     .text{
        width: 600px;
+       max-width: 100%;
        margin: auto;
     }
     .card{
@@ -224,19 +233,32 @@ section{
     h1{
         font-size: 48px;
         padding-top: 70px;
+        
     }
     p{
         font-size: 14px;
         color: white;
         padding-bottom: 70px;
+        
     }
 }
 
 .sec6{
-    .image{
-        position: relative;
-        left: -30px;
-    }
+  .mod{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+  }
+  .arrow{
+      background-color: white;
+      color: rgb(8, 8, 8) !important;
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border: 10px solid #00000021;
+  }
+
 }
 
 .sec7{
@@ -259,9 +281,9 @@ section{
    .lorem{
        padding-top: 100px;  
        position: relative;
-      text-align: center;
-      width: 800px;
-      max-width: 100%;  
+       text-align: center;
+       width: 800px;
+       max-width: 100%;  
    }
     p{
         font-size: 20px;
@@ -273,6 +295,7 @@ section{
         justify-content: center;
         align-items: center;
         width: 700px;
+        max-width: 100%;
         padding-top: 50px;
         padding-bottom: 100px;
         margin: auto;
@@ -310,25 +333,44 @@ section{
 
 }
 .sec8{
+    .map{
+        width: 50px;
+        max-width: 100%;
+        height: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        
+    }
     .text{
         width: 600px;
-       
+        max-width: 100%;
+        
     }
+    .img{
+         position: relative;
+    }
+
     img{
         width: 100%;
         height: 240px;
         object-fit: cover;
+       
+      
+    
     }
     .row{
         padding-bottom: 100px;
     }
     .card{
         box-shadow: 1px 1px 5px #dddcdc ;
+        
        
     }
     h4{
         font-size: 16px;
-        font-weight: bold;
+        font-family: mont;
         color: #002e5b;
         
     }
@@ -336,7 +378,7 @@ section{
         font-size: 16px;
         color: #002e5b;
         width: 200px;
-        padding-top: 20px;
+        padding-top: 10px;
     }
 }
 .sec9{
@@ -356,6 +398,26 @@ section{
     }
     }
    
+}
+
+@media (max-width:770px){
+    
+    .carousel-control-prev{
+        top: 90%;
+        left: 50%;
+        transform: translate(-70%, -50%);
+        span{
+            display: none;
+        }
+    }
+    .carousel-control-next{
+        top: 90%;
+        left: 50%;
+        transform: translate(-30%, -50%);
+        span{
+            display: none;
+        }
+    }
 }
 
 

@@ -11,7 +11,7 @@
 <body>
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
             <div class="container">
               <a class="navbar-brand" href="#"><span>Counsel</span> <br> own your course</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,35 +52,26 @@
             </div>
           </nav>
 
-
+ 
+          
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
            
             <div class="carousel-inner">
+          
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+               <img class="icon-r pt-1" src="img/R.png" alt="">
+                <span class="head p-3">previous <span class="ps-2">/</span> </span>
+              </button>
+             
+              <button class="carousel-control-next " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="head p-3"> next</span>
+                <img class="icon-l pt-1" src="img/L.png" alt="">
+              </button>
 
               <div class="carousel-item active">
                 <!-- <img src="../img/Layer 1 (1).png" class="d-block w-100" alt="..."> -->
                 <div class="carousel-caption d-none d-sm-block container h-100 p-5">
                   <div class="h-100 d-flex align-items-center ">
-                  
-                    <div class="col-lg-2">
-                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                      <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="arrow" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
-                      </svg></span>
-                      <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                      <span class="">Previous</span> -->
-                    </button>
-                     <div class="text-warning ms-5">previous / next</div>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                      <span><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="arrow  icon" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
-                      </svg></span>
-                      <!-- <span class="carousel-control-next-icon icon" aria-hidden="true"></span>
-                      <span class="">Next</span> -->
-                    </button>
-                    </div>
-                   
-                   
                     <div class="col-lg-6  bord ms-auto">
                         <h5>consumer products consulting</h5>
                         <a href="" class="pt-3 d-inline-block">learn more</a>
@@ -128,10 +119,10 @@
                     <a href="">take a tour</a>
                     </div>                  
                 </div>
-                <div class="col-lg-6 ">
+                <div class="col-lg-6 pe-0 ">
                   <div class="image">
                      <h1 class="m-auto"></h1>
-                    <img src="https://th.bing.com/th/id/OIP.dBXxOVLth_gW2ECUtAP5tAHaE8?pid=ImgDet&rs=1" alt="">
+                    <img class="ms-auto "  src="img/image.png" alt="">
                   </div>
                    
                 </div>
@@ -145,7 +136,7 @@
         <div class="row ">
           <div class="col-lg-6">
             <div class="cards">
-              <img src="https://1.bp.blogspot.com/-1LoIp-b-cLY/Vw0A61HelOI/AAAAAAAAACU/k6NIjhg5IlUwpp0iSy0sShaj77NzRmX_wCK4B/s1600-r/diagramebi-091011113212-phpapp02-thumbnail-4.jpg" alt="">
+              <img src="../img/Graph.png" alt="">
             </div>
             
           </div>
@@ -253,12 +244,27 @@
 
     <section class="sec6">
         <div class="container">
-          <div class="row">
+          <div class="row ">
 
-            <div class="col-lg-6 ">
+            <div class="col-lg-6 ps-0">
               <div class="image">
                  <h1 class="m-auto"></h1>
-                <img src="../img/image.png" alt="">
+                <img src="img/video back.png" alt="">
+                <!-- Button trigger modal -->
+<button  class="btn mod " data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-fill arrow rounded-circle " viewBox="0 0 16 16">
+    <path d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"/>
+  </svg>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    <video src="video/yt1s.com - Office Work Free Stock Video  One1.mp4" autoplay muted></video>
+    </div>
+  </div>
+</div>
               </div>
           </div>
 
@@ -274,7 +280,7 @@
     </section>
 
     <section class="sec7 text-white">
-      <div class="lorem container ">
+      <div class="lorem container">
          <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="currentColor" class="bi bi-quote text-white icons" viewBox="0 0 16 16">
         <path d="M12 12a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1h-1.388c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 9 7.558V11a1 1 0 0 0 1 1h2Zm-6 0a1 1 0 0 0 1-1V8.558a1 1 0 0 0-1-1H4.612c0-.351.021-.703.062-1.054.062-.372.166-.703.31-.992.145-.29.331-.517.559-.683.227-.186.516-.279.868-.279V3c-.579 0-1.085.124-1.52.372a3.322 3.322 0 0 0-1.085.992 4.92 4.92 0 0 0-.62 1.458A7.712 7.712 0 0 0 3 7.558V11a1 1 0 0 0 1 1h2Z"/>
       </svg>
@@ -287,7 +293,7 @@
     </section>
 
     <section class="sec8">
-      <div class="text container text-center">
+      <div class="text container text-center pt-5">
         <h2>contact with us</h2>
         <h3>rapid solutions to the most complex business challenges with cooperative proces-driven</h3>
       </div>
@@ -295,8 +301,12 @@
            <div class="row">
 
              <div class="col-lg-4 mt-3">
-               <img src="../img/map.png" alt="">
-               <div class="card p-5 border-0">
+               <div class="img">
+                  <img src="../img/map.png" alt="" >
+               <img src="img/Map..png" alt="" class="map">
+               </div>
+              
+               <div class="card p-4 ps-5 border-0">
                    <h4>HEAD QUARTER</h4>
                    <h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                     <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
@@ -312,8 +322,11 @@
               </div>
 
               <div class="col-lg-4 mt-3">
-                <img src="../img/map.png" alt="">
-                <div class="card p-5 border-0">
+                <div class="img">
+                  <img src="../img/map.png" alt="" >
+               <img src="img/Map..png" alt="" class="map">
+               </div>
+                <div class="card ps-5 p-4 border-0">
                     <h4>CALIFORNIA OFFICE</h4>
                     <h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
@@ -329,8 +342,11 @@
                </div>
 
                <div class="col-lg-4 mt-3">
-                <img src="../img/map.png" alt="">
-                <div class="card p-5 border-0">
+                <div class="img">
+                  <img src="../img/map.png" alt="" >
+               <img src="img/Map..png" alt="" class="map">
+               </div>
+                <div class="card ps-5 p-4 border-0">
                     <h4>LONDON OFfICE</h4>
                     <h5><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
@@ -352,7 +368,7 @@
     <section class="sec9">
         <div class="footer container d-flex">
           <div class="copy">
-            <p>Copyright  &#169; <span class="text-warning">Symu.co</span></p>
+            <p>Copyright  &#169; <span class="text-warning">Jeko.co</span></p>
           </div>
           <div class="socials ms-auto">
            

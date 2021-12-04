@@ -55,19 +55,13 @@
   z-index: 2;
 }
 
-.carousel-control-prev {
-  top: 50%;
-  left: 50%;
-  transform: translate(-260%, -50%);
-}
-
 .carousel-control-next {
   top: 50%;
-  left: 50;
-  transform: translate(-465%, -50%);
+  left: 0;
+  transform: translate(100%, -50%);
 }
 
-.head {
+.arrow {
   color: #fde428 !important;
   font-size: 12px;
 }
@@ -215,14 +209,6 @@ section .image img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.sec6 .arrow {
-  background-color: white;
-  color: #080808 !important;
-  width: 100px;
-  height: 100px;
-  padding: 20px;
-  border: 10px solid #00000021;
-}
 
 .sec7 {
   background-image: url(https://th.bing.com/th/id/R.304ec74656c3a87ff77746ea568949fa?rik=UveT61flj1Lm6g&riu=http%3a%2f%2fwp.polothemes.com%2fquomodo%2fwp-content%2fuploads%2f2020%2f08%2fservice-dt-1.jpg&ehk=a1fZT%2f7bkpMF0svKqs1OSPwnScwad9%2bJumDOmq5Rvxk%3d&risl=&pid=ImgRaw&r=0);
@@ -289,21 +275,9 @@ section .image img {
   bottom: 3px;
 }
 
-.sec8 .map {
-  width: 50px;
-  max-width: 100%;
-  height: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
 .sec8 .text {
   width: 600px;
   max-width: 100%;
-}
-.sec8 .img {
-  position: relative;
 }
 .sec8 img {
   width: 100%;
@@ -345,29 +319,10 @@ section .image img {
   top: 20px;
 }
 
-@media (max-width: 770px) {
-  .carousel-control-prev {
-    top: 90%;
-    left: 50%;
-    transform: translate(-70%, -50%);
-  }
-  .carousel-control-prev span {
-    display: none;
-  }
-
-  .carousel-control-next {
-    top: 90%;
-    left: 50%;
-    transform: translate(-30%, -50%);
-  }
-  .carousel-control-next span {
-    display: none;
-  }
-}
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1200px;
   }
 }
 
-/*# sourceMappingURL=ofice.css.map */
+/*# sourceMappingURL=office.css.map */
