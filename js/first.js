@@ -55,5 +55,83 @@ console.log(myarray)
 //ცვლადის გატანება ტემპლეიტ სინტაქსით
 let name = "ჯეკო";
 let myname = `მე მქვია ${name}`
-document.getElementById("string").innerHTML = myname
+// document.getElementById("string").innerHTML = myname
 
+//numbers
+
+//ციფრის დამგვალება 2ვალუტა  3წონა
+let price = 5.30;
+let weight = 1.600;
+let num = price * weight 
+console.log(num.toFixed(2)); 
+
+//let sum = number(price) + number(weight); //სტრინგი გადაყავს ნამბერში
+
+
+//ფუნქციები
+
+//ფუნქციის შექმნა გამოძხება
+// function myfunc(){
+//     let url = "https://jekokiteishvili.github.io/jeko1/ofice.html";
+// let img = "../img/R.jpg"
+// let text = "Some quick example text to build on the card title and make up the bulk of the card's content."
+// let myname = `<div class = "col-lg-4" <div class="card">
+// <img src="${img}" class="card-img-top" alt="...">
+// <div class="card-body">
+//   <h5 class="card-title">Card title</h5>
+//   <p class="card-text">${text}</p>
+//   <a href="${url}" class="btn btn-primary">Go somewhere</a>
+// </div>
+// </div>
+// </div>`
+// document.getElementById("text").innerHTML = myname
+// }
+
+// myfunc();  
+
+//ფუნქციის გამოყენება კოდის დაზოგვა
+function myfunc(url, img, text, selector){
+let myname = `<div class = "col-lg-4" <div class="card">
+<img src="${img}" class="card-img-top" alt="...">
+<div class="card-body">
+  <h5 class="card-title">Card title</h5>
+  <p class="card-text">${text}</p>
+  <a href="${url}" class="btn btn-primary">Go somewhere</a>
+</div>
+</div>
+</div>`
+document.getElementById(selector).innerHTML = myname
+}
+
+myfunc("https://jekokiteishvili.github.io/jeko1/ofice.html","../img/R.jpg","Some quick example text to build on the card title and make up the bulk of the card's content.", "text"); 
+myfunc("https://jekokiteishvili.github.io/jeko1/ofice.html","../img/image.png","lorem ipsum lorem ipsum", "text2"); 
+
+//
+
+function convertor(val = "GEL", count){
+    let USD = 3.150;
+    
+    let resul = count / USD;
+
+    return resul.toFixed(3);
+}
+
+console.log(convertor("GEL", 25))
+
+// function convertor(val = "USD", count){
+//     let USD = 3.150;
+//     let EUR = 3.50
+//     let resul;
+
+//     if(val == "USD"){
+//       resul = count / USD; 
+//     }
+
+//     if(val == "EUR"){
+//       resul = count / EUR; 
+//      }
+
+//     return resul.toFixed(2), val;
+// }
+
+// console.log(convertor("USD", 25))
