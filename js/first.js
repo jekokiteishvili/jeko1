@@ -135,3 +135,47 @@ console.log(convertor("GEL", 25))
 // }
 
 // console.log(convertor("USD", 25))
+
+
+
+//obieqtebi
+
+// let user = {
+//   name:"admin",
+//   email:"admin@info.ge",
+//   role:1,
+// }
+// console.log(user.name);
+
+
+let user = {
+  name:"admin",
+  img:"https://clipground.com/images/admin-logo-3.png",
+  email:"admin@info.ge",
+  role:1,
+  checkadmin:function(){
+    if(this.role == 1){
+      return true;
+    }
+    return false;
+  },
+}
+
+user.role = 2; //ფროფერთის შეცვლა
+
+ let key = Object.keys(user); //მარცხენა მხარის ანუ ფროფერთების დაბეწდვა
+let val = Object.values(user); //მარჯვენა მხარე ანუ მნიშვნელობეის დაბეჭდვა
+let all = Object.entries(user);//ყველასი ერთად დაბეჭდვა
+console.log(all);
+console.log(key,val);//მარცხენა მარჯვენა
+console.log(user);
+console.log(user.checkadmin());
+console.log(user.role)
+
+// let user = {
+//   name:"admin",
+//   email:"admin@info.ge",
+//   role:1,
+// }
+// console.log(user.name);
+
