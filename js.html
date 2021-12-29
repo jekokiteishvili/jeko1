@@ -39,6 +39,24 @@
     </div>
 
 
+    <div class="container">
+        <div class="row">
+              <div class="col-lg-4 p-3 mb-3">
+            <select name="" class="form-control" onchange="changedval(this.value)" id="">
+             <option value="0">ყველა</option>
+            <option value="1">ადმინი</option>
+            <option value="2">მომხმარებელი</option>
+        </select>
+        </div>
+        <div class="col-lg-4 p-3 mb-3">
+            <input type="text" class="form-control" oninput="search(this.value)">
+        </div>
+        </div>
+        
+        <div class="row" id="admincard">
+
+        </div>
+    </div>
 
 <script src="js/first.js"></script>
 </body>

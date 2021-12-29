@@ -179,3 +179,161 @@ console.log(user.role)
 // }
 // console.log(user.name);
 
+
+//მასივებიი
+
+let number = [1,2,3,4,5]
+number.push("new member")//მასივში ახალი ელემენტის ჩამატება ბოლოში
+number.unshift("new member")//მასივში ახალი ელემენტის ჩამატება თავში
+number.pop() //ბოლო ელემენტი წაშლა
+number.shift()//პირველი ელემენტის წაშლა
+//number.splice(3, 1) //წაშლა, პირველი პარამეტრი რამდენი დატოვოს მეორე რამდენი მოჭრას
+number.splice(3, 1 ,20) // დატოვებს პირველ სამს წაშლის მეოთხეს და ჩსვამს 20ს
+number.sort() //სორტირება
+number.reverse() //შებრუნებული სორტირება
+console.log(number) 
+
+//ზრდადობის მიხედვით სწორად დალაგება
+let arstr = number.sort(mysort)
+function mysort(a, b){
+  return a - b
+}
+console.log(arstr)
+
+//ეძებს პირველ ელემენტს გადაცემული პირობის მიხედვით
+// let findel = number.find(el =>{
+//   return el > 2
+// })
+// console.log(findel)
+
+//ეძებს ელემენტებს გადაცემული პირობის მიხედვით, ქმნის ახალ მასივს
+// let findel = number.filter(el =>{
+//   return el == "2"
+// })
+// console.log(findel)
+
+//თუ რომელიმე წევრი აკმაყოფილებს პირობას
+// let findel = number.some(el =>{
+//   return el == "2"
+// })
+// console.log(findel)
+
+//თუ ყველა წევრი აკმაყოფილებს პირობას
+let findel = number.every(el =>{
+  return el == "2"
+})
+console.log(findel)
+
+// console.log(number[0])//პირველი ელემენტის გამოძახება
+
+//array methods
+
+number.forEach(el =>{
+  console.log(el == 0);
+})
+
+number.map(el =>{
+  console.log(el * 2);
+})
+
+for (let i = 0; i < array.length; i++) {
+  
+  console.log(number[i])
+}
+
+
+
+//პრაქტიკა
+
+let Users = [
+  {
+    name: "admin",
+    email: "admin@gmail.com",
+    isAdmin: true,
+    phone: 555203040,
+    avatar: "img/Layer 8.png",
+    age: 25
+  },
+
+  {
+    name: "admin2",
+    email: "admin@gmail.com",
+    isAdmin: false,
+    phone: 555203040,
+    avatar: "img/Layer 8.png",
+    age: 35
+  },
+
+  {
+    name: "admin3",
+    email: "admin@gmail.com",
+    isAdmin: true,
+    phone: 555203040,
+    avatar: "img/Layer 8.png",
+    age: 75
+  },
+
+  {
+    name: "admin4",
+    email: "admin@gmail.com",
+    isAdmin: false,
+    phone: 555203040,
+    avatar: "img/Layer 8.png",
+    age: 45
+  },
+]
+
+
+
+
+
+  function changedval(id){
+    admincard.innerHTML = '';
+    let Userfilter;
+    if (id==1) {
+      Userfilter = Users.filter(el =>{
+        return el.isAdmin == true
+      })
+    }else if(id == 2){
+      Userfilter = Users.filter(el =>{
+        return el.isAdmin == false
+      })
+    }else{
+      Userfilter == Users;
+    }
+
+    function search(text){
+      admincard.innerHTML = '';
+      let Userfilter;
+
+      Userfilter = Users.filter(el =>{
+        return !el.name.search (text)
+      })
+    }
+
+    Userfilter.forEach(element => {
+  let role;
+  if (element.isAdmin) {
+     role = `<span class="badge bg-success">ადმინ</span`;
+  }else{
+     role = `<span class="badge bg-danger">მომხმარებელი</span`;
+  }
+
+admincard.innerHTML += `
+   <div class="col-lg-4 mb-3"  <div class="card">
+    <img src="${element.avatar}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">${element.name}</h5>
+      <p class="card-text">${element.age}</p>
+      <a href="" class="btn btn-primary">${element.phone}</a>
+      ${role}
+    </div>
+    </div>
+    </div>
+   `
+});
+
+  }
+
+
+  
