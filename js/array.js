@@ -140,7 +140,7 @@ function changedval(id){
     let studentsfilter;
     if (id == 1){
         studentsfilter = students.filter(el =>{
-            return el.stipendia == true;
+            return el.age == 22;
         }) 
     }
      if(id == 2){
@@ -180,17 +180,17 @@ function search (text){
 }
 
 function filterdata(studentsfilter){
-    students.forEach(element =>{
+    studentsfilter.forEach(element =>{
         let role;
         if (element.stipendia) {
-           role = `<span class="badge bg-success">სტიპენდიანტი</span`;
+           role = `<span class="badge bg-success">სტიპენდიანტი</span>`;
         }else{
-           role = `<span class="badge bg-danger">არა სტიპენდიანტი</span`;
+           role = `<span class="badge bg-danger">არა სტიპენდიანტი</span>`;
         }
         if (element.Attendance == 100){
-        atend = `<span class="badge bg-success">წარმატებული</span`;
+        atend = `<span class="badge bg-primary">წარმატებული</span>`;
     }else{
-       atend = `<span class="badge bg-secondary"></span`;
+       atend = `<span class="badge bg-secondary"></span>`;
     }
         studentcard.innerHTML += `
        <div class="col-lg-3 mb-3"  <div class="card">

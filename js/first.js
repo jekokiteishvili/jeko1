@@ -336,4 +336,35 @@ admincard.innerHTML += `
   }
 
 
+
+  //date
+
+
+  let d = new Date();
+  // let day = d.getDay();
+  // let month = d.getMonth() + 1;
+  // let year = d.getFullYear()
+
+  let startdata = Date.parse('2021/12/20') - Date.parse('2021/12/1');
+
+  let day = startdata / (1000*60*60*24);
+
+  console.log(day)
+
+  setInterval(() => {
+    let d = new Date();
+    years.innerHTML = d.getFullYear() +"/";
+    month.innerHTML = d.getMonth() + 1 +"/";
+    day.innerHTML = d.getDate() +"/";
+    hour.innerHTML = d.getHours() +"/";
+    minute.innerHTML = d.getMinutes() +"/";
+    second.innerHTML = d.getSeconds();
+
+  }, 1000);
+
+
+
+ //
+
+
   
