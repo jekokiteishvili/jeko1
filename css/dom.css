@@ -1,0 +1,66 @@
+.but:hover,
+.but.active{
+    background-color: black;
+    color: white !important;
+}
+
+
+
+
+
+.head{
+    background-color: rgb(13, 13, 59);
+    height: 100%;   
+}
+
+.head .mybtn{
+    font-size: 40px;
+    color: rgb(189, 94, 5);
+    padding: 30px;
+    /* cursor: pointer;
+    transition: all 1.4s; */
+}
+.mybtn2{
+    font-size: 40px;
+    color: rgb(189, 94, 5);
+    padding: 30px;
+    opacity: 0;
+}
+
+
+.drop{
+    background-color: rgb(224, 75, 21);
+    height: 100%;
+    width: 40%;
+    transform: scale(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all .6s;
+}
+
+
+
+
+.drop li {
+  display: block;
+ 
+  transition: all .6s;
+}
+
+.drop li a{
+    text-decoration: none;
+    color:white;
+    font-size: 30px;
+    
+}
+
+.menu.show{
+    transform: scale(1);
+  opacity: 1;
+  pointer-events: all;
+} 
+
+
+
+
+

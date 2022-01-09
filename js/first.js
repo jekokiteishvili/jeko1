@@ -364,7 +364,81 @@ admincard.innerHTML += `
 
 
 
- //
+ //dom events
+
+//  let butt1 = document.getElementById("but1");
+//  let butt2 = document.getElementById("but2");
+
+
+//  butt1.addEventListener("click", function(){
+   
+//    document.getElementById("gilaki").innerText = this.innerText
+//  })
+
+//  butt2.addEventListener("click", function(){
+   
+//   document.getElementById("gilaki").innerText = this.innerText
+// })
+
+//gamartiveba
+
+let btn = document.querySelectorAll(".dom");
+let reset = document.querySelector("#reset");
+
+reset.addEventListener("click", function(){
+  document.getElementById("gilaki").innerText = ''
+})
+
+btn.forEach(el =>{
+  el.addEventListener("click", function(){
+    document.getElementById("gilaki").innerText += this.innerText //+ით ვუმატებთ =ანაცვლებს
+    })
+})
+
+let input = document.querySelector("#mycontrol");
+let msg = document.querySelector('small');
+
+input.addEventListener('keyup', function(){
+
+  let values = this.value;
+  msg.removeAttribute('class')
+
+  this.classList.toggle('border-danger') 
+// toggle მონაცვლრობით ემატება და იშლება კლასი add კლასის დამატება remove კლასის წაშლა 
+// replace კლასის ჩანაცვლება, contains შეიცავს თუ არა ამა თუ იმ კლასს აბრუნებს ბულიანს
+
+  if(values == ''){
+     msg.innerText = 'ველის შევსება სავალდებულოა!'
+     msg.classList.add('text-danger');
+  }else if(values.length > 0 && values.length < 10){
+    msg.innerText = 'შეიყვანეთ სპეციალური სიმბოლოები!'
+    msg.classList.add('text-warning');
+  }else{
+    msg.innerText = 'ok!'
+    msg.classList.add('bg-success', 'text-white');
+  }
+})
+
+let modalopen = document.querySelector('.modals');
+let modalcontent = document.querySelector('.mymodal')
+
+let closes = document.querySelector('.closes')
+
+modalopen.addEventListener("click", function(){
+    // modalcontent.classList.add("show");
+    modalcontent.classList.toggle("show");
+    
+    if (modalopen.innerText == "ფანჯრის გახსნა"){
+      modalopen.innerText = "ფანჯრის დახურვა"
+    }else{
+      modalopen.innerText = "ფანჯრის გახსნა"
+    }
+})
+
+closes.addEventListener("click", function(){
+  modalcontent.classList.remove("show")
+})
+
 
 
   

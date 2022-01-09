@@ -1,0 +1,52 @@
+.modals{
+    margin: auto;
+    padding: 7px;
+    border: 0;
+    font-size: 17px;
+    color: #fff;
+    border-radius:7px ;
+    background-color: black;
+
+}
+
+.mymodal{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    background-color: #fff;
+    border-radius: 7px;
+    box-shadow: 7px 7px 8px #0000001f;
+    padding: 40px;
+    text-align: center;
+    font-size: 17px;
+    opacity: 0;
+
+    pointer-events: none;
+    transition: all .6s;
+
+}
+
+.mymodal.show{
+    transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+  pointer-events: all;
+}
+
+.mymodal i{
+   font-size: 35px;
+   color: green;
+   padding:  25px;
+}
+
+.closes{
+    margin: auto;
+    padding: 7px;
+    border: 0;
+    margin-top: 60px;
+    display: block;
+    font-size: 17px;
+    color: #fff;
+    border-radius:7px ;
+    background-color: rgb(50, 216, 9);
+}
