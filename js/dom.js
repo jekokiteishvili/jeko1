@@ -6,10 +6,11 @@ let incr = document.querySelector("#incr");
 
 
 decr.addEventListener("click", function(){
+  
     let numb = document.querySelector("#num");
     numb.innerText --;
-    if (numb < 0){
-        numb.claslist.add('text-danger');
+    if (numb.innerText < 0){
+        numb.classList.add('text-danger');
     }
     
 })
@@ -17,8 +18,8 @@ decr.addEventListener("click", function(){
 incr.addEventListener("click", function(){
     let numb = document.querySelector("#num");
     numb.innerText ++;
-  if (numb > 0){
-      numb.claslist.add('text-success');
+  if (numb.innerText > 0){
+      numb.classList.add('text-success');
   }
 })
 
@@ -46,7 +47,7 @@ menuopen.addEventListener("click", function(){
 
     });
 
-    closes.addEventListener("click", function(){
-        modalcontent.classList.remove("show")
-      })
+    // closes.addEventListener("click", function(){
+    //     modalcontent.classList.remove("show")
+    //   })
 

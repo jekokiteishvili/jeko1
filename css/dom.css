@@ -54,7 +54,7 @@
     
 }
 
-.menu.show{
+.drop.show{
     transform: scale(1);
   opacity: 1;
   pointer-events: all;
