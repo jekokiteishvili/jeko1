@@ -440,5 +440,33 @@ closes.addEventListener("click", function(){
 })
 
 
+//hfhgfhg
+
+let outdiv = document.querySelector('#created');
+
+let ind =0
+
+let buttonnew = document.querySelector("#new1").addEventListener("click", function(){
+
+//tegis sheqmna
+let ul = document.createElement('ul');
+let li = document.createElement('li');
+
+li.innerText = `(${ind}) lis konteqti`
+li.classList.add('bg-dark', 'text-white')
+
+ul.appendChild(li)
+
+//html sheqmnili tegis generireba
+outdiv.appendChild(ul);
+ind ++;
+
+//washla
+ul.addEventListener("dblclick", function(){
+  this.remove();
+})
+
+})
+
 
   

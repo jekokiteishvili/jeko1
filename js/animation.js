@@ -4,6 +4,7 @@ let icon = document.querySelector('.bi');
 let sma = document.querySelector('small');
 let spa = document.querySelector('span');
 
+
 toggl.addEventListener('click', function(){
 
     if(icon.classList[1] == "bi-eye-slash-fill"){
@@ -26,7 +27,7 @@ togglinp.addEventListener('keyup', function(){
   let values = this.value;
   sma.removeAttribute('class')
   spa.removeAttribute('class')
-  
+ 
 
   if(values == ''){
      sma.innerText = 'ველის შევსება სავალდებულოა!'
@@ -35,9 +36,7 @@ togglinp.addEventListener('keyup', function(){
     sma.innerText = 'min. 8 characters with at last one capital letter, a number and a cpecial character'
     sma.classList.add('text-danger');
     spa.classList.add('text-danger');
-   
-    
-   
+
   }else{
     sma.innerText = 'your password passed!'
     sma.classList.add( 'text-primary');
