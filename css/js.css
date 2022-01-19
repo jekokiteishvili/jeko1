@@ -50,3 +50,13 @@
     border-radius:7px ;
     background-color: rgb(50, 216, 9);
 }
+
+.box{
+    cursor: pointer;
+}
+.content{
+    display: none;
+}
+.show{
+    display: block;
+}

@@ -1,0 +1,10 @@
+.active{
+    cursor: pointer;
+    transition: all 0.6s;
+}
+
+.active:hover{
+    background-color: white !important;
+    color: rgb(24, 23, 23) !important;
+    transition: all 0.6s !important;
+}

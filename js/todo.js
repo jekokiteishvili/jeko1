@@ -26,10 +26,12 @@ addtask.addEventListener('submit', function(e){
     sma.innerText = `${id + 1} task`
     id ++;  
     }
+
     
     if(type == "edit"){
         
        document.querySelector('#updttext' + taskid).innerText = text.value; 
+       document.querySelector(`button[data-id="${taskid}"]`).setAttribute('data-text',text.value); 
        text.value = "";
        addtask.setAttribute('data-type', 'add');
         }

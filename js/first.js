@@ -470,3 +470,59 @@ ul.addEventListener("dblclick", function(){
 
 
   
+// mshoblebi
+
+let childiv = document.querySelector('#test').parentElement //მშობელი
+let cont = document.querySelector('.container').children//შვილები
+let next = document.querySelector('#sibls').nextElementSibling //ქვედა მეზობელი
+let prev = document.querySelector('#sibls').previousElementSibling //ზედა მეზობელი
+let allsibl = document.querySelector('#sibls').parentElement.children //ყველა მეზობელი
+
+// console.log(childiv.parentElement.parentElement); // mshoblis mshobeli da ase shemdeg
+
+let p = document.querySelector('.col-lg-5').children;
+
+for (let i = 0; i < p.length; i++) {
+  const element = p[i];
+
+  element.addEventListener('click', function(){
+    if(this.nextElementSibling != null){
+        this.nextElementSibling.style.backgroundColor = "red"
+    }
+  
+  })
+  
+}
+
+
+document.querySelectorAll('.btn-info').forEach(el=>{
+  el.addEventListener('click', function(){
+    let type = this.getAttribute('data-arr');
+    let active = document.querySelector('.active');
+    if (type == 1){
+      if (active.nextElementSibling != null){
+        active.nextElementSibling.classList.add('active');
+        active.classList.remove('active');
+      }else{
+        p[0].classList.add('active');
+        active.classList.remove('active');
+      }
+   
+    }else{
+      if (active.previousElementSibling != null){
+      active.previousElementSibling.classList.add('active');
+      active.classList.remove('active');
+      }else{
+        p[p.length - 1].classList.add('active');
+        active.classList.remove('active');
+      }
+      
+    }
+  })
+})
+
+document.querySelectorAll('.box').forEach(box=>{
+  box.addEventListener('click', function(){
+    this.children[1].classList.toggle('show')
+  })
+})
