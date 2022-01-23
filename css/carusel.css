@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  body{
+      margin: 0;
+      overflow: hidden;
+  }
+  
+   
+  
+   
+  
+  .carusel .item{
+      height: 100vh;
+      display: block;
+      transition: all .6s;
+      position: absolute;
+      width: 100%;
+   
+      opacity: 0;
+  
+  }
+  
+  .carusel .item.active{
+   
+   opacity: 1;
+  }
+  
+  .carusel .item .texts{
+      width: 50%;
+      left: 50%;
+      top: 50%;
+      position: absolute;
+      transform: translate(-50%, -50%);
+      backdrop-filter: blur(3px);
+      padding: 40px;
+      border: 1px solid #cccccc14;
+      border-radius: 35px;
+  }
+  
+  .arr {
+      background-color: crimson;
+      width: 45px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      position: absolute;
+      transform: translateY(-50%);
+      top:50%;
+      z-index: 99;
+      border:0;
+      cursor: pointer;
+      border-radius: 3px;
+  
+  }
+  
+  .arr.left {
+    left: 50px;
+  }
+  
+  .arr.right {
+      right: 50px;
+    }
+  
+    .switchers{
+        position: absolute;
+        bottom: 15%;
+        left: 50%;
+        z-index: 9999;
+        transform: translateX(-50%);
+    }
+  
+  .slswith{
+      width: 32px;
+      height: 6px;
+      display: inline-block;
+      margin: 0 5px;
+      border-radius: 4px;
+      cursor: pointer;
+      opacity: .6;
+      background-color: crimson;
+  }
+  
+  .slswith.active{
+    opacity: 1;
+  }

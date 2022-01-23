@@ -25,6 +25,39 @@
         p.active{
             background-color: green;
         }
+
+
+        /* slider */
+        .mytab{
+        display: none;
+    }
+
+    .mytab.active{
+        display: block;
+    }
+
+    .btn.active{
+        background-color: #fff;
+    }
+
+
+    /* ინფორმაცია ივენთებზე */
+
+    .click{
+        position: absolute;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        display: inline-block;
+        background-color: lawngreen;
+    }
+
+    #minesectton{
+        height: 300px;
+        margin-top: 400px;
+        background-color: crimson;
+    }
+
     </style>
     
     <button class="bg-dark text-danger d-block m-auto p-2 fs-3 fw-bold rounded-pill" onclick="alert('hi');"> hello</button>
@@ -182,6 +215,35 @@
     </div>
 
     
+
+    <!-- slider -->
+
+    <div class="col-lg-6 mx-auto m-5 alltab">
+        <button class="btn btn-info tabbtn  active" data-id="#home">home</button>
+        <button class="btn btn-info tabbtn " data-id="#about">about</button>
+        <button class="btn btn-info tabbtn " data-id="#contact">contact</button>
+        <button class="btn btn-info tabbtn " data-id="#service">service</button>
+        <div class="tbcontent">
+            <div class="mytab active" id="home">
+  1   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore laudantium hic doloremque cum repudiandae voluptatem iusto explicabo esse, consequuntur quia, quibusdam repellendus, natus debitis libero officia illo molestias dignissimos id.
+            </div>
+            <div class="mytab" id="about">
+2     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore minima eaque sint veritatis. Cumque ut iure sapiente quasi vitae doloribus perferendis cupiditate optio animi error? Similique suscipit beatae explicabo laboriosam.
+            </div>
+            <div class="mytab" id="contact">
+3     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laboriosam esse sapiente. Harum accusamus, earum itaque incidunt laboriosam sint, magnam nulla architecto quisquam praesentium aliquid. Quod harum non voluptatum odio.
+            </div>
+            <div class="mytab" id="service">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quisquam laboriosam esse sapiente. Harum accusamus, earum itaque incidunt laboriosam sint, magnam nulla architecto quisquam praesentium aliquid. Quod harum non voluptatum odio.
+                            </div>
+        </div>
+
+    </div>
+
+    <!-- /* ინფორმაცია ივენთებზე */ -->
+
+    <section  id="minesectton"></section>
+
     
 
 

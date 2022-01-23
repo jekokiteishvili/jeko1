@@ -526,3 +526,40 @@ document.querySelectorAll('.box').forEach(box=>{
     this.children[1].classList.toggle('show')
   })
 })
+
+
+// slider
+
+document.querySelectorAll('.tabbtn').forEach(tab=>{
+  tab.addEventListener('click', function(){
+       document.querySelector('.alltab button.active').classList.remove('active');
+       document.querySelector('.mytab.active').classList.remove('active');
+       this.classList.add('active')
+       document.querySelector(this.getAttribute('data-id')).classList.add('active')
+  })
+})
+
+
+//ინფორმაცია ივენთებზე
+
+document.addEventListener('click', function(event){
+//  event.target.style.color = "red"  //მდებარეობა, რასაც დავაჭერთ გაწითლდება
+ let x = event.clientX; // ივენთის კორდინატები ვერტიკალური
+ let y = event.clientY; // ივენთის კორდინატები ჰორიზონტალური   
+
+ let spans = document.createElement('span');
+ spans.classList.add('click');
+ spans.style.left = x + "px"
+ spans.style.top = y + "px"
+ document.body.appendChild(spans)
+})
+
+window.addEventListener('scroll', function(){
+  // console.log(window.scrollY) //სქროლის პიქსელი y
+  // console.log(window.scrollx) //სქროლის პიქსელი x
+
+  let scry = window.scrollY;
+  let height = this.innerHeight
+  let pos = document.querySelector('#minesectton').getBoundingClientRect(); // აბრუნებს ელემენტის დაშორებას
+  console.log(height / 5 > pos.top)
+})
