@@ -2,12 +2,14 @@
     position: absolute;
     width: 50px;
     height: 50px;
+    
     background-color: crimson;
     border-radius: 50%;
     left: 0;
     top: 0;
     animation-name: mineanime;
-    animation-duration: 8s;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
    animation-direction: alternate;
     z-index: 555;
 }
@@ -40,7 +42,7 @@
 
 40%{
     left: 60%;
-    right: 80%;
+    top: 80%;
   
 }
 
@@ -56,13 +58,13 @@
 }
 
 70%{
-    right: 40%;
-    bottom: 10%;
+    left: 40%;
+    top: 10%;
 }
 
 80%{
     left: 90%;
-    right: 80%;
+    top: 80%;
 }
 
 90%{
@@ -72,7 +74,7 @@
 
 100%{
     left: 100%;
-   right: 100%;
+   top: 100%;
   }
 
 }

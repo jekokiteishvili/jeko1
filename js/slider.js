@@ -15,17 +15,22 @@ document.addEventListener('click', function(el){
 })
  
 // document.addEventListener('click', function(el){
-//  let pos = document.querySelector('.ball').getBoundingClientRect();
-//  let x = el.clientX
-//  let y = el.clientY
 
-//  if(x == pos || y == pos)  {
+//   let x = el.clientX
+//  let y = el.clientY
+//  let ballx = ball.getBoundingClientRect().left;
+//  let bally = ball.getBoundingClientRect().top;
+//  let ballw = ball.getBoundingClientRect().width;
+//  let ballh = ball.getBoundingClientRect().height;
+
+//  let match = y > bally && y < (bally + ballh) && x > bally && x < (ballx + ballw);
+ 
+
+//  if(match)  {
 //   ball.classList.add("green")
 //  }else{
 //     ball.classList.remove("green")
 //  }
-
-// console.log(x == pos || y == pos)
 
 // })
 

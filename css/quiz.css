@@ -1,0 +1,45 @@
+body{
+    height: 100vh;
+}
+
+img{
+    width: 100%;
+}
+
+.ansrow p{
+cursor: pointer;
+}
+
+.ansrow{
+    display: none;
+}
+
+.ansrow.curentques{
+    display: flex;
+}
+
+.ansrow.point{
+    pointer-events: none;
+}
+
+.counts{
+    padding: 20px;
+    position: fixed;
+    right: 50px;
+    top: 50px;
+
+}
+
+.counts span{
+    padding: 8px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+.result{
+    padding: 20px;
+}
+.result h3{
+    font-size: 30px;
+    
+}
