@@ -1,0 +1,31 @@
+.animate{
+    background-color: crimson;
+    /* width: 20px;
+    height: 20px; */
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+
+}
+
+.animate input{
+    border: 0;
+    background-color: cornsilk;
+    padding: 15px;
+    border-radius: 7px;
+    display: block;
+    
+}
+
+.open {
+    cursor: pointer;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
