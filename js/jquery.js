@@ -121,5 +121,99 @@ $(function () {
         })
     });
 
+    //praqtika
 
+    $('.absbtn').click(function (e) { 
+        e.preventDefault();
+        $('body').addClass('backdrop')
+        $('.absbtn i').replaceWith('<i class="bi bi-x-lg"></i>');
+
+        $(this).animate({
+            "width":"450px",
+            "border-radius":"4px"
+        }, 800, function(){
+            $(this).animate({
+            "height":"550px",
+            "border-radius":"4px"
+            },1000, function(){
+                $('.absbtn form').css({
+                    "transform": "translateY(10%)",
+                    "transition": "all .4s",
+                    "opacity":"1"
+                })
+            })
+        })
+    });
+
+//     $(document).on('click', function(e){
+//       if(e.target.claslist[0] == "backdrop" || e.target.claslist[1] == "bi-x-lg"){
+//           $('.absbtn i').replaceWith('<i class="bi bi-pencil-fill"></i>');
+//           $('body').removeClass('backdrop');
+//           $('.absbtn').animate({
+//             "width":"50px",
+//             "border-radius":"50%"
+//         }, 800, function(){
+//             $('.absbtn').animate({
+//             "height":"50px",
+//             "border-radius":"4px"
+//             },1000, function(){
+//                 $('.absbtn form').css({
+//                     "transform": "translateY(-100%)",
+//                     "transition": "all .4s",
+//                     "opacity":"0"
+//                 })
+//             })
+//         })
+//       }
+//     })
+
+
+// klasebis minicheba 
+
+//let get = $('.smform').html() // mtliani kontenti modis
+
+ $('.smform').submit(function(e){
+    e.preventDefault();
+    let get = $('.myc').val();
+
+    $('.myc').addClass('mineclass') //კლასის დამატება
+    $('.myc').removeClass('mineclass') //კლასის წაშლა
+    let checklas = $('.myc').hasClass('mineclass') //აქვს თუ არა ეს კლასი
+
+//     let conf = confirm('დადასტურების შემტხვევაში წაიშლება ინფორმაცია'); //დადასტურება
+// if(conf){
+//     $(this).empty()
+// }
+
+
+  //$(this).append(`<input type="text" class="myc" value="${get}">`) // ამატებს ახალ ელემენტს ბოლოში
+  //  $(this).prepend(`<input type="text" class="myc" value="${get}">`) // ამატებს ახალ ელემენტს  თავში
+
+//   $('.myc').before('<label>asadsfsvsf</label>') //ამატებს ახალ ელემენტს სელექტორის ზევით
+//   $('.myc').after('<label>asadsfsvsf2</label>')  //ამატებს ახალ ელემენტს სელექტორის დაბლა
+
+ //   $('.myc').remove()//ელემენტის წაშლა
+ //   $(this).empty()// შლის კონტენტს
+
+})
+
+
+$('.switchs').click(function (e) { 
+    e.preventDefault();
+    $('.col-lg-4').toggleClass('col-lg-12')
+    let text = $(this).text();
+    if(text == "list"){
+    $(this).text("grid");   
+    }
+    else{
+        $(this).text("list");
+    }
 });
+
+
+ });
+
+
+
+
+
