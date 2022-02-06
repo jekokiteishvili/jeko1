@@ -93,8 +93,88 @@ body.darkmode{
 }
 
 
-input{
-  width: 80% !important;
-  padding: 10px;
-  
+/* typing */
+
+.typing{
+	display: flex;
+	width: 30%;
+	margin: auto;
+
 }
+
+.focus{
+    width: 4px;
+    height: 18px;
+	background-color: blue;
+	animation-name:foc ;
+	animation-duration: .5s;
+	animation-iteration-count: infinite;
+}
+
+.typing span{
+ animation-name:ups ;
+ animation-duration: .2s;
+ display: inline-block;
+ animation-iteration-count: 1;
+ /* animation-delay: 1s; */
+ 
+}
+ 
+@keyframes ups {
+	0%{
+ 
+		 
+		transform: translateY(100%);
+	}
+
+	100%{
+ 
+        
+		transform: translateY(0);
+	}
+}
+
+
+@keyframes foc {
+	0%{
+		opacity: 0;
+	}
+
+	100%{
+		opacity:1;
+	}
+}
+
+
+/* step */
+
+.steps{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+ border: 2px solid chocolate;
+ align-items: center;
+ text-align: center;
+ padding-top: 10px;
+ 
+}
+
+.steps.active{
+	color: #fff;
+	background-color: chocolate;
+	
+}
+.sm.active{
+  color: chocolate;
+	text-align: center;
+  align-items: center;
+}
+
+.forpar{
+	display: none;
+}
+
+.forpar.active{
+	display: block;
+}
+ 

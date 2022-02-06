@@ -211,6 +211,29 @@ $('.switchs').click(function (e) {
 });
 
 
+
+  //მშობლები
+  
+  // $("#mycontent").parent().css('background-color', "red"); მშობლის დასელექტება
+  //  $("#mycontent").parents(".container"); წინაპრების დასელექტება
+ //   $("#mycontent").parentsUntil("body") წინაპრების დასელექტება კონკრეტულ სელექტორამდე
+//    $("#mypars").children(".row2") გვისელექტებს შვილობილ ტეგს
+// $("#mycontent").next().css('color', 'green') // ქვედა მეზობელი (პირველი)
+// $("#mycontent").prev().css('color', 'blue') // ზედა მეზობელი (პირველი)
+// $("#mycontent").prevAll().css('color', 'blue') // ზედა მეზობელი (ყველა)
+// $("#mycontent").nextAll().css('color', 'green') // ქვედა მეზობელი (ყველა)
+//$("#mypars").find('p').css('color', 'red') // ეძებს ელემენტის შიგნით 
+//  $(".col-lg-4").filter(function(index){
+//     return $(this).text().length > 10
+//  }).css('color', 'red') // გვიბრუნებს ელემენტებს გადაცემული პირობის მიხედვით
+// $("#mypars .col-lg-4").first().css('color', 'red'); // პირველი ელემენტი
+// $("#mypars .col-lg-4").last().css('color', 'red'); //  ბოლო ელემენტი
+// $("#mypars .col-lg-4").eq(3).css('color', 'yellow'); // ელემენტი ინდექსით
+
+console.log($("#mypars .col-lg-4").first());
+
+
+
  });
 
 

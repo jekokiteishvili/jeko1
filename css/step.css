@@ -1,0 +1,65 @@
+.steps{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 4px solid chocolate;
+  margin: auto;
+  cursor: default;
+  color: rgb(160, 154, 154);
+  position: relative;
+}
+
+.steps.active{
+    color: white;
+    background-color: chocolate;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.small{
+    text-align: center;
+    color: rgb(160, 154, 154);
+}
+
+.act-p{
+    color: chocolate;
+
+}
+
+.forpar{
+	display: none;
+}
+
+.forpar.active{
+	display: block;
+}
+.btnrow{
+    display: flex;
+    justify-content: space-between;
+}
+.move {
+    background-color: chocolate;
+    color: white;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 20px;
+    padding: 5px 40px;
+    display: inline-block;
+}
+
+.next{
+    margin-left: auto;
+}
+.d-none{
+    display: none;
+}
+
+/* .active-btn{
+    display: block;
+} */
+
+
+   
