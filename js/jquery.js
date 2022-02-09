@@ -234,6 +234,31 @@ console.log($("#mypars .col-lg-4").first());
 
 
 
+//atributebi
+
+// let src  = $('.formconten img').attr('src')
+
+// $('.formconten img').attr({'src':'img/may.png', 'alt':'ტესტი'}) // 2 ატრიბუტს ვატანთ ერთდროულად
+
+// $('.formconten img').attr('src', function( i, val ) {
+//         console.log(i, val)
+//      return val + "/img/2";
+//       }) //ყველა ელემენტს ანიჭებს იმჯ2ს
+
+
+//       //ზომები
+
+//     let sizez = $("#stepsec").width( ); // გვიბრუნებს ელემენტის width (content) 
+//     let sizez = $("#stepsec").innerWidth( ); // გვიბრუნებს ელემენტის width (padding) 
+//     let sizez = $("#stepsec").outerWidth( );  //  გვიბრუნებს ელემენტის width (full) 
+//     let sizez = $("#stepsec").scrollTop();
+//     console.log(sizez);
+//     იგივე გვაქვს heightzec
+
+
+
+
+
  });
 
 

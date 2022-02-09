@@ -1,0 +1,49 @@
+.ddown {
+    width: 400px;
+    max-width: 100%; 
+}
+.drop{
+    background-color: rgb(243, 241, 239);
+    width: 100%;
+}
+.ul {
+    display: none;
+}
+.ddown ul li{
+    list-style: none;
+    cursor: pointer;
+    width: 100%;
+    margin-right: 40px;
+}
+.ddown ul li:hover{
+    background-color: rgb(243, 241, 239);
+}
+.social-bi {
+    font-size: 40px;
+    padding: 10px 20px;
+}
+
+.text {
+    padding-top: 15px;
+}
+
+.text small {
+    color: gray;
+    font-size: 13px;
+}
+.text p{
+    text-align: start;
+}
+
+.dropped {
+    display: block;
+    height: 100%;
+}
+
+.newbtn {
+    display: flex;
+    padding: 0;
+}
+.newli {
+    background-color: rgb(243, 241, 239);
+}
