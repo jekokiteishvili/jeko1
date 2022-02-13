@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "fslightbox": "^3.3.1",
+    "magnify": "^2.3.3",
+    "nouislider": "^15.5.1"
+  }
+}
