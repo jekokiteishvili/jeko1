@@ -1,8 +1,10 @@
 [
     {
-    "name":"ჩემი პირველი ajax",
+    "name":"jeko kiteishvili",
     "img":"https://th.bing.com/th/id/R.342c62886d1ca3ca718abd62e823e895?rik=r%2fTJNyk4DFgBZA&pid=ImgRaw&r=0&sres=1&sresct=1",
-    "id":1
+    "email":"jeko@gmail.com",
+    "data":"20/02/2022",
+    "role": "admin"
    },
 
 
