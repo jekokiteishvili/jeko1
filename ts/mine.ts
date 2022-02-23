@@ -27,7 +27,7 @@ let Myint:int = {
 
 
 let card:string = `<div class="col-lg-4 mx-auto mt-5">
-<div class="card rounded shadow">
+<div class="card rounded shadow border-0">
 <div class="card-body">
   <h5 class="card-title"> ${Myint.name}</h5>
   <h6 class="card-subtitle mb-2 text-muted"> ${Myint.Age}</h6>
